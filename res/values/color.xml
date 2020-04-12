@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <color name="primaryColor">#353D68</color>
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="main_color_green">#00b863</color>
+    <color name="main_color_gray_dk">#3b3b3b</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="main_color_gray">#7d7d7d</color>
+    <color name="gray_light">#e8e8e8</color>
+    
+    
+    <color name="color_barra_ini">#8dd8f8</color>
+    <color name="color_barra_fin">#8dd8f8</color>
+    <color name="color_barra_centro">#8dd8f8</color>
+    
+    
+      <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Agenda</string>
+    <string name="title_section1">Logout</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    
+    <string name="title_section_logout">Logout</string>
+    <string name="title_section_setting">Configuracion</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Ayuda</string>
+    <string name="action_settings">Settings</string>
+  <string name="or">or</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_my_pwd">I’ve forgotten my password?</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">All Chats</string>
+    <string name="search">Search</string>
+    <string name="to">To:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">New Chat</string>
+    <string name="alert_wait">Please wait...</string>
+    <string name="err_fields_empty">Debe cargar los campos</string>
+    <string name="err_singup">Error en signup:</string>
+    <string name="err_login">Error en login:</string>
+    <string name="err_users">Error occurred while finding users:</string>
+	<string name="alert_loading">Loading...</string>
+	<string name="msg_no_user_found">No users found for chat!</string>
+    <string name="type_msg">Type message</string>
+    <string name="title_section_ppal">Principal</string>
+    <string name="diez">10</string>
+    <string name="ultima_sincronizacion">Ultima Sincronización</string>
+    <string name="salir">Salir</string>
+    <string name="provider_authority">aguasdelnorte.com.ar.agenda2.provider.ProviderDeProceso</string>
+    <string name="account_type">aguasdelnorte.com.ar.agenda2.account</string>
+    <!-- 
+     <string name="provider_authority">aguasdelnorte.com.ar.agenda2</string>
+    <string name="account_type">aguasdelnorte.com.ar.agenda2</string>
+    -->
+    <string name="observacion">Observacion</string>
+    <string name="tipo_de_accion">Elija un tipo de Accion</string>
+    <string name="btnPruebaConexion">Prueba Conexion</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="notificaciones_del_sistema">Noticicaciones del Sistema</string>
+    
+    <string name="no_puede_autorizar">Este Item solo puede ser autorizado desde el GESP</string>
+    
+    <string name="new_password">Confirmar Password</string>
+    <string name="old_password">Password</string>
+    <string name="cambiar">Cambiar</string>
+</resources>

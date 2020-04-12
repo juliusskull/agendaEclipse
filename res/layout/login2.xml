@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pad_20dp"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_20dp" >
+
+        <ImageView
+            android:id="@+id/imgDefoult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/pad_20dp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:ems="10"
+            android:hint="@string/old_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/pwd2"
+            style="@style/editext_graybg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/ic_pwd"
+            android:ems="10"            
+            android:inputType="textPassword"
+            android:hint="@string/new_password" />
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/btn_white_large_aguas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cambiar" />
+
+            <Button
+                android:id="@+id/btnReg"
+                style="@style/btn_white_large_aguas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/salir" 
+                
+                android:layout_marginLeft="@dimen/pad_10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

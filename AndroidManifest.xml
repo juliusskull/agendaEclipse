@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aguasdelnorte.com.ar.agenda2"
+    android:versionCode="5"
+    android:versionName="1.5"
+    android:exported="false">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="20" />
+    <uses-permission android:name="android.permission.INTERNET"/>    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>    
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+        <!-- Sincronización -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.Login"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />                
+            </intent-filter>
+        </activity>
+        <!-- SERVICIO DE AUTENTICACIÓN -->
+        <service android:name=".sync.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+         <!-- SERVICIO DE SINCRONIZACIÓN -->
+         <service
+            android:name=".sync.SyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+        </service>
+        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".ui.ListActivity" android:screenOrientation="portrait" ></activity>
+        <activity android:name=".ui.ItemAgendaActivity" android:screenOrientation="portrait"  ></activity>
+        <activity android:name=".ui.MyPdfViewerActivity" android:screenOrientation="portrait"  ></activity>
+        <activity android:name=".ui.NotificacionesActivity" android:screenOrientation="portrait"  ></activity>    
+        <activity android:name=".ui.ListNotificacionesActivity" android:screenOrientation="portrait"  ></activity>  
+        <activity android:name=".ui.LoginCambio" android:screenOrientation="portrait"  ></activity>            
+          
+       <provider android:name="aguasdelnorte.com.ar.agenda2.provider.ProviderDeGastos" android:authorities="aguasdelnorte.com.ar.agenda2.provider.ProviderDeGastos"  android:exported="true"></provider>
+       <provider android:name="aguasdelnorte.com.ar.agenda2.provider.ProviderDeProceso" android:authorities="aguasdelnorte.com.ar.agenda2.provider.ProviderDeProceso"  android:exported="true"></provider>
+    
+        <meta-data
+    android:name="android.app.default_searchable"
+    android:value="aguasdelnorte.com.ar.agenda2.ui.MainActivity" />
+        
+<meta-data
+    android:name="android.app.searchable"
+    android:resource="@xml/searchable" />
+    </application>
+
+</manifest>
